@@ -1,25 +1,29 @@
-<header class="header">
-  <div class="header__logo">
-    <a href="/">ZDCAPS</a>
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="site-header__logo">
+      <a href="/" style="text-decoration:none; color:inherit; font-family:var(--font-heading-family); font-size:24px; font-weight:bold;">ZDCAPS</a>
+    </div>
+    <nav class="site-header__nav">
+      <ul class="nav-list">
+        {% for link in linklists.main-menu.links %}
+          <li><a href="{{ link.url }}" class="nav-link">{{ link.title }}</a></li>
+        {% endfor %}
+        <li><a href="/pages/b2b-inquiry" class="nav-link" style="color: #888;">Wholesale</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__icons" style="display:flex; gap:20px;">
+      <a href="/search" class="nav-link">Search</a>
+      <a href="/cart" class="nav-link js-open-cart">Cart (0)</a>
+    </div>
   </div>
-  <nav class="header__nav">
-    <ul style="display:flex; list-style:none; gap:20px;">
-      <li><a href="/collections/all">All Caps</a></li>
-      <li><a href="/pages/custom-manufacturing">B2B Solutions</a></li>
-      <li><a href="/pages/about-us">About Us</a></li>
-    </ul>
-  </nav>
 </header>
 
-{% schema %}
-{
-  "name": "Header",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo"
-    }
-  ]
-}
-{% endschema %}
+<div class="cart-drawer">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:40px;">
+    <h3 style="margin:0;">Your Bag</h3>
+    <button class="js-close-cart" style="background:none; border:none; cursor:pointer; font-size:20px;">&times;</button>
+  </div>
+  <div class="cart-drawer__content">
+    <p style="color:#666;">Your cart is currently empty.</p>
+  </div>
+</div>

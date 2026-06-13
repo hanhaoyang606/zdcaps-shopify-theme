@@ -1,8 +1,56 @@
-{
-  "name": "ZDCAPS Premium",
-  "theme_name": "ZDCAPS Premium",
-  "theme_version": "1.0.0",
-  "theme_author": "Poke Build Agent",
-  "theme_documentation_url": "https://github.com/hanhaoyang606/zdcaps-shopify-theme",
-  "theme_support_url": "https://github.com/hanhaoyang606/zdcaps-shopify-theme"
-}
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_1",
+        "default": "#FFFFFF",
+        "label": "Background 1"
+      },
+      {
+        "type": "color",
+        "id": "colors_text",
+        "default": "#121212",
+        "label": "Text Color"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_1",
+        "default": "#000000",
+        "label": "Accent Color"
+      },
+      {
+        "type": "header",
+        "content": "Typography"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_header_font",
+        "default": "helvetica_n4",
+        "label": "Heading font"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "default": "helvetica_n4",
+        "label": "Body font"
+      }
+    ]
+  },
+  {
+    "name": "B2B Inquiry",
+    "settings": [
+      {
+        "type": "text",
+        "id": "b2b_email",
+        "label": "B2B Contact Email",
+        "default": "sales@zdcaps.com"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+<section class="b2b-section">
+  <div class="container">
+    <div class="b2b-grid">
+      <div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 24px;">Custom Manufacturing & Bulk Orders</h2>
+        <p style="font-size: 18px; color: #666; margin-bottom: 32px; line-height: 1.8;">
+          ZDCAPS provides end-to-end manufacturing solutions for global brands. From initial design to high-volume production, our facility is equipped to handle complex headwear specifications with premium materials.
+        </p>
+        <div class="trust-badges" style="display:flex; gap:32px; opacity:0.6;">
+          <span>ISO 9001 Certified</span>
+          <span>Global Shipping</span>
+          <span>Eco-Friendly Materials</span>
+        </div>
+      </div>
+      <div style="background:white; padding:48px; border:1px solid #eee;">
+        <h3 style="margin-bottom:24px;">Bulk Inquiry Form</h3>
+        {% form 'contact', class: 'inquiry-form' %}
+          <input type="text" name="contact[company]" placeholder="Company Name" required>
+          <input type="email" name="contact[email]" placeholder="Business Email" required>
+          <select name="contact[quantity]" style="padding:16px; border:1px solid #e8e8e8;">
+            <option value="50-100">50 - 100 units</option>
+            <option value="100-500">100 - 500 units</option>
+            <option value="500+">500+ units</option>
+          </select>
+          <textarea name="contact[body]" rows="5" placeholder="Tell us about your project requirements..."></textarea>
+          <button type="submit" class="btn-primary">Request Quote</button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "B2B Inquiry Form",
+  "settings": []
+}
+{% endschema %}

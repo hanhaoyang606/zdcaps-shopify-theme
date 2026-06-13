@@ -3,10 +3,20 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "title": "Premium Headwear for Professionals",
-        "subtitle": "Global B2B & B2C Cap Manufacturing Excellence"
+        "title": "Architectural Headwear",
+        "subtitle": "Precision-engineered caps designed for performance and aesthetic longevity."
+      }
+    },
+    "b2b": {
+      "type": "b2b-inquiry",
+      "settings": {}
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Core Series"
       }
     }
   },
-  "order": ["hero"]
+  "order": ["hero", "featured-collection", "b2b"]
 }

@@ -1,0 +1,31 @@
+<section class="hero">
+  <div class="hero__content">
+    <span style="text-transform:uppercase; letter-spacing:0.3em; font-size:12px; display:block; margin-bottom:16px;">The Art of Headwear</span>
+    <h1 class="hero__title">{{ section.settings.title }}</h1>
+    <p style="font-size:18px; margin-bottom:40px; color:#666;">{{ section.settings.subtitle }}</p>
+    <div style="display:flex; gap:16px; justify-content:center;">
+      <a href="/collections/all" class="btn-primary">Shop Collection</a>
+      <a href="/pages/manufacturing" class="btn-primary" style="background:transparent; color:black; border:1px solid black;">B2B Solutions</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Premium Craftsmanship"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Custom manufacturing for the world's most discerning brands."
+    }
+  ]
+}
+{% endschema %}
