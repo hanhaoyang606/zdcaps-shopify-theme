@@ -1,0 +1,16 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_width": 150
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {}
+      }
+    }
+  }
+}

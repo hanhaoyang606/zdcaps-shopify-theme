@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "title": "Premium Headwear for Professionals",
+        "subtitle": "Global B2B & B2C Cap Manufacturing Excellence"
+      }
+    }
+  },
+  "order": ["hero"]
+}

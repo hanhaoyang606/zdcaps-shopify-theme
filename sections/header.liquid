@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="header__logo">
+    <a href="/">ZDCAPS</a>
+  </div>
+  <nav class="header__nav">
+    <ul style="display:flex; list-style:none; gap:20px;">
+      <li><a href="/collections/all">All Caps</a></li>
+      <li><a href="/pages/custom-manufacturing">B2B Solutions</a></li>
+      <li><a href="/pages/about-us">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    }
+  ]
+}
+{% endschema %}
